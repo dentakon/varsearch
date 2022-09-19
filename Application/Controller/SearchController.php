@@ -5,7 +5,7 @@
  * See LICENSE file for license details.
  */
 
-namespace OxidEsales\EshopCommunity\Application\Controller;
+namespace dentakon\VarSearch\Application\Controller;
 
 use oxRegistry;
 use oxUBase;
@@ -15,7 +15,7 @@ use oxSearch;
  * Articles searching class.
  * Performs searching through articles in database.
  */
-class SearchController extends \OxidEsales\Eshop\Application\Controller\FrontendController
+class VarSearchController extends \OxidEsales\Eshop\Application\Controller\SearchController
 {
     /**
      * Count of all found articles.
