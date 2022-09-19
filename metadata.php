@@ -12,7 +12,7 @@ $sMetadataVersion = '2.0';
  * Module information
  */
 $aModule = array(
-    'id'          => 'varsearch',
+    'id'          => 'VarSearch',
     'title'       => array(
         'de' => 'Variantensuche',
         'en' => 'Varsearch',
