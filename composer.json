@@ -29,7 +29,7 @@
     },
     "autoload":    {
         "psr-4": {
-            "dentakon\\dentakonVarSearch\\": "../../../source/modules/dentakon/varsearch"
+            "dentakon\\VarSearch\\": "../../../source/modules/dentakon/varsearch"
         }
     }
 }
