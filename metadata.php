@@ -28,7 +28,7 @@ $aModule = array(
     'email'       => 'davidhennig@dentakon.de',
     'extend'      => array(
 	    \OxidEsales\Eshop\Application\Controller\SearchController::class => \dentakon\VarSearch\Application\Controller\VarSearchController::class,
-	    \OxidEsales\Eshop\Application\Model\Search::class => \dentakon\VarSearch\Application\Model\Varsearch:class,
+	    \OxidEsales\Eshop\Application\Model\Search::class => \dentakon\VarSearch\Application\Model\Varsearch::class,
     ),
 
     'controllers' => array(
