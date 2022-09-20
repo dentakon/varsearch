@@ -215,7 +215,7 @@ class Varsearch extends \OxidEsales\Eshop\Application\Model\Search
         }
 
         $sSelect .= $oArticle->getSqlActiveSnippet();
-        $sSelect .= " and {$sArticleTable}.oxparentid = '' and {$sArticleTable}.oxissearch = 1 ";
+        $sSelect .= " and {$sArticleTable}.oxissearch = 1 ";
 
         if ($sInitialSearchVendor) {
             $sSelect .= " and {$sArticleTable}.oxvendorid = " . $oDb->quote($sInitialSearchVendor) . " ";
@@ -226,6 +226,8 @@ class Varsearch extends \OxidEsales\Eshop\Application\Model\Search
         }
 
         $sSelect .= $sWhere;
+        
+        $sSelect .= " group by {$sArticleTable}.oxartnum";
 
         if ($sSortBy) {
             $sSelect .= " order by {$sSortBy} ";
